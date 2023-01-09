@@ -1,0 +1,408 @@
+/* ====================================
+// css variables
+// ==================================== */
+
+:root {
+}
+
+/* ====================================
+// reset rules
+// ==================================== */
+
+@import "bootstrap/scss/bootstrap-grid";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  max-inline-size: 100%;
+  block-size: auto;
+  vertical-align: middle;
+}
+
+/* ====================================
+// base rules
+// ==================================== */
+
+
+header {
+  background-image: url(../img/bann.png);
+  background-repeat: no-repeat;
+
+}
+
+h1 {
+  font-family: CinzelDecorative-Regular;
+  font-size: 100px;
+  font-weight: 300;
+  color: #FFFFFF;
+  letter-spacing: 5.56px;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 375px) {
+	h1 {
+		font-size: 40px;
+	}
+}
+
+header p {
+  font-family: PinyonScript-Regular;
+  font-size: 55px;
+  color: #FFFFFF;
+  letter-spacing: 3.06px;
+  line-height: 55px;
+  padding-left: 735px;
+  margin-top: -100px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+	.legende {
+		display: none;
+	}
+}
+
+@media (max-width: 1300px) {
+	.legende {
+		font-size: 30px;
+	}
+}
+
+.valeurs h2{
+  padding-top: 145px;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+	.valeurs h2 {
+		padding-top: 80px;
+	}
+}
+
+@media (max-width: 375px) {
+	.valeurs h2 {
+		padding-top: 48px;
+	}
+}
+
+.valeurs p {
+  font-family: RocGrotesk-ExtraLight;
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: 1.17px;
+  line-height: 40px;
+  text-align: center;
+  // padding-left: 150px;
+  // padding-right: 150px;
+  padding-bottom: 210px;
+}
+
+@media (max-width: 375px) {
+	.valeurs p {
+		font-size: 15px;
+    letter-spacing: 0.58px;
+    line-height: 20px;
+    padding-bottom: 48px;
+	}
+}
+
+@media (max-width: 768px) {
+	.valeurs p {
+		padding-bottom: 85px;
+	}
+}
+
+main h2 {
+  font-family: CinzelDecorative-Regular;
+  font-size: 55px;
+  letter-spacing: 3.06px;
+  text-align: center;
+  padding-top: 275px;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+	main h2 {
+		font-size: 40px;
+    padding-top: 0px;
+	}
+}
+
+@media (max-width: 375px) {
+	main h2 {
+		font-size: 25px;
+	}
+}
+
+main img {
+  width: 100%;
+}
+
+.evenements {
+  background-color: #212B13;
+  padding-bottom: 275px;
+}
+
+@media (max-width: 768px) {
+	.evenements {
+    padding-top: 100px;
+		padding-bottom: 135px;
+	}
+}
+
+@media (max-width: 375px) {
+	.evenements {
+    padding-top: 33px;
+		padding-bottom: 92px;
+	}
+}
+
+.evenements .row {
+  justify-content: space-between;
+}
+
+.evenements h2 {
+  color: #FFFFFF;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+	.evenements h2 {
+		padding-bottom: 39px;
+	}
+}
+
+@media (max-width: 375px) {
+	.evenements h2 {
+		padding-bottom: 48px;
+	}
+}
+
+.evenements h3 {
+  font-family: RocGrotesk-Light;
+  font-size: 30px;
+  color: #FFFFFF;
+  letter-spacing: 1.67px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+@media (max-width: 768px) {
+	.evenements h3 {
+		padding-top: 35px;
+	}
+}
+
+@media (max-width: 375px) {
+	.evenements h3 {
+    font-size: 25px;
+		padding-top: 20px;
+	}
+}
+
+.evenements p {
+  font-family: RocGrotesk-Light;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 1.11px;
+  line-height: 25px; 
+  padding-top: 25px;
+}
+
+@media (max-width: 768px) {
+	.evenements p {
+		padding-top: 6px;
+	}
+}
+
+@media (max-width: 375px) {
+	.evenements p {
+		padding-top: 4px;
+	}
+}
+
+.libre {
+  padding-bottom: none;
+}
+
+@media (max-width: 375px) {
+	.libre {
+		padding-bottom: 60px;
+	}
+}
+
+.carte h2{
+  padding-bottom: none;
+}
+
+@media (max-width: 768px) {
+	.carte h2 {
+    padding-top: 101px;
+	}
+}
+
+.carte h3 {
+  font-family: PinyonScript-Regular;
+  font-weight: 200;
+  font-size: 55px;
+  color: #000000;
+  letter-spacing: 3.06px;
+  text-align: center;
+  margin-top: -20px;
+  padding-bottom: 125px;
+}
+
+@media (max-width: 768px) {
+	.carte h3 {
+		font-size: 40px;
+    padding-bottom: 84px;
+    margin-top: 0px;
+	}
+}
+
+@media (max-width: 375px) {
+	.carte h3 {
+		font-size: 25px;
+    padding-bottom: 85px;
+    margin-top: none;
+	}
+}
+
+.carte .container {
+  display: flex;
+  flex-direction: column;
+  padding: none;
+}
+
+.carte p {
+  font-family: RocGrotesk-Light;
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: 1.67px;
+  text-align: left;
+  padding-top: 25px;
+}
+
+.jardinier  {
+
+}
+
+.chasseur img {
+  // margin-left: 665px;
+  margin-top: 150px;
+}
+
+.Messager img {
+  margin-top: -225px;
+}
+
+.bouton {
+  font-family: RocGrotesk-Light;
+  font-weight: 200;
+
+}
+
+.horaires {
+  background: #212B13;
+}
+
+.horaires h2 {
+  color: #FFFFFF;
+}
+
+.horaires h3 {
+  font-family: PinyonScript-Regular;
+  font-weight: 200;
+  font-size: 55px;
+  color: #FFFFFF;
+  letter-spacing: 3.06px;
+  text-align: center;  
+}
+
+.horaires .container {
+  display: flex; 
+  justify-content: space-around;
+  padding-bottom: 275px;
+}
+
+.horaires p {
+  font-family: RocGrotesk-ExtraLight;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 1.67px;
+  text-align: center;
+}
+
+footer {
+ background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ),
+  url("../img/footer.webp");
+  // background-image: url(../img/footer.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 275px;
+  padding-bottom: 351px;
+}
+
+footer h2 {
+  font-family: CinzelDecorative-Regular;
+  font-size: 55px;
+  color: #FFFFFF;
+  letter-spacing: 3.06px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+footer p {
+  font-family: RocGrotesk-Light;
+  font-size: 30px;
+  color: #FFFFFF;
+  letter-spacing: 1.67px;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  margin-bottom: 34px;
+}
+
+.telephone {
+  margin-bottom: 60px;
+}
